@@ -3,6 +3,7 @@
 
     echo("hoeveel items wilt u toevoegen aan uw bucketlist?");
     $hoeveel = readline();
+    if (is_numeric($hoeveel)){
 
     $bucket = array("");
 
@@ -17,5 +18,8 @@
     for($a = 0; $a <= $hoeveel; $a++){
         echo("$bucket[$a]".PHP_EOL);
     }
+} else {
+    echo("dit is geen getal probeer het opnieuw");
+}
 
 ?>
